@@ -334,8 +334,8 @@ class Weixinpay extends Api
 
         $weixinPay = new WeixinpayClass();
         $order = [
-            // 'total_fee'=>$coin_order_info['total'] * 100,
-            'total_fee'=>1,
+             'total_fee'=>$coin_order_info['total'] ,
+            //'total_fee'=>1,
             'out_trade_no'=>$coin_order_info['code'],
             'product_id'=>$coin_order_info['id'],
             'openId'=>$user_info['openid'],
